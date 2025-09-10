@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgens/Favicon mercado JND.png" type="image/x-icon">
+  <title>Contato | Mercados Públicos de Juazeiro do Norte</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1A2E5E', /* Azul Escuro */
+            secondary: '#F9A825', /* Amarelo */
+            accent: '#E53E3E', /* Vermelho */
+            dark: '#0F1A2E', /* Azul muito escuro para o footer */
+            light: '#F5F5F5',
+            blueHover: '#2C4A8D' /* Tom de azul para hover */
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            serif: ['Merriweather', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(26, 46, 94, 0.9) 0%, rgba(44, 74, 141, 0.9) 100%);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .rotate-180 {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-light font-sans">
+
+  <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="imgens/Mercado Juazeiro.png" alt="Mercados Juazeiro do Norte" class="h-15 w-40">
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="p-2 focus:outline-none"><i data-feather="menu"></i></button>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Início</a>
+          <div class="dropdown relative">
+            <a href="sobre.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition flex items-center">Sobre <i data-feather="chevron-down" class="ml-1 w-4 h-4"></i></a>
+            <div class="dropdown-menu absolute hidden bg-white text-dark shadow-lg rounded mt-1 w-48 z-50">
+              <a href="sobre.html" class="block px-4 py-2 hover:bg-gray-100">O Projeto</a>
+            </div>
+          </div>
+          <a href="mercados.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Mercados</a>
+          <a href="feirantes.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Feirantes</a>
+          <a href="eventos.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Eventos</a>
+          <a href="contato.html" class="px-4 py-2 font-medium rounded bg-accent text-white transition">Contato</a>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-dark px-4 pb-4">
+      <a href="index.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Início</a>
+      <div class="py-2">
+        <button id="mobile-submenu-button" class="flex items-center justify-between w-full py-2 text-white hover:bg-accent hover:text-white px-2 rounded"><span>Sobre</span><i data-feather="chevron-down" class="w-4 h-4"></i></button>
+        <div id="mobile-submenu" class="pl-4 hidden mt-2">
+          <a href="sobre.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">O Projeto</a>
+          <a href="equipe.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Nossa Equipe</a>
+        </div>
+      </div>
+      <a href="mercados.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Mercados</a>
+      <a href="feirantes.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Feirantes</a>
+      <a href="eventos.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Eventos</a>
+      <a href="contato.html" class="block py-2 text-white bg-accent text-white px-2 rounded">Contato</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero-gradient text-white">
+      <div class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold" data-aos="fade-up">Entre em Contato</h1>
+        <p class="text-xl mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Fale conosco, tire suas dúvidas ou envie sugestões. Estamos prontos para atender você!</p>
+      </div>
+    </div>
+
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-right">
+            <h2 class="text-3xl font-bold text-dark mb-6">Envie uma Mensagem</h2>
+            <form action="#" method="POST" class="space-y-6">
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Seu Nome</label>
+                <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required>
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Seu E-mail</label>
+                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required>
+              </div>
+              <div>
+                <label for="subject" class="block text-gray-700 font-medium mb-2">Assunto</label>
+                <input type="text" id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required>
+              </div>
+              <div>
+                <label for="message" class="block text-gray-700 font-medium mb-2">Sua Mensagem</label>
+                <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-blueHover transition flex items-center justify-center">
+                  <i data-feather="send" class="mr-2"></i> Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="space-y-8" data-aos="fade-left" data-aos-delay="100">
+            <h2 class="text-3xl font-bold text-dark mb-6">Nossos Canais</h2>
+            <div class="flex items-start space-x-4">
+              <div class="bg-primary text-white p-4 rounded-full"><i data-feather="map-pin"></i></div>
+              <div>
+                <h3 class="text-xl font-semibold text-dark">Endereço</h3>
+                <p class="text-gray-600">Secretaria de Desenvolvimento Econômico e Turismo (SEDETUR)<br>R. 15 de Novembro, S/N - São Miguel, Juazeiro do Norte - CE</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="bg-primary text-white p-4 rounded-full"><i data-feather="phone"></i></div>
+              <div>
+                <h3 class="text-xl font-semibold text-dark">Telefone</h3>
+                <p class="text-gray-600">(88) 3199-0379</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="bg-primary text-white p-4 rounded-full"><i data-feather="mail"></i></div>
+              <div>
+                <h3 class="text-xl font-semibold text-dark">E-mail</h3>
+                <p class="text-gray-600">sedetur@juazeiro.ce.gov.br</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="bg-primary text-white p-4 rounded-full"><i data-feather="clock"></i></div>
+              <div>
+                <h3 class="text-xl font-semibold text-dark">Horário de Atendimento</h3>
+                <p class="text-gray-600">Segunda a Sexta, das 8h às 17h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <a href="index.html" class="flex items-center">
+              <img src="imgens/Mercado Juazeiro.png" alt="Mercados Juazeiro do Norte" class="h-12 w-auto">
+            </a>
+          </div>
+          <p class="text-gray-400">Fortalecendo o comércio local e valorizando nossa cultura.</p>
+          <div class="flex space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a><a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="youtube"></i></a></div>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+            <li><a href="sobre.html" class="text-gray-400 hover:text-white transition">Sobre o Projeto</a></li>
+            <li><a href="mercados.html" class="text-gray-400 hover:text-white transition">Mercados</a></li>
+            <li><a href="feirantes.html" class="text-gray-400 hover:text-white transition">Feirantes</a></li>
+            <li><a href="eventos.html" class="text-gray-400 hover:text-white transition">Eventos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Contato</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center"><i data-feather="mail" class="mr-2"></i><span class="text-gray-400">sedetur@juazeiro.ce.gov.br</span></li>
+            <li class="flex items-center"><i data-feather="phone" class="mr-2"></i><span class="text-gray-400">(88) 3199-0379</span></li>
+            <li class="flex items-center"><i data-feather="map-pin" class="mr-2"></i><span class="text-gray-400">R. 15 de Novembro, S/N</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">WhatsApp</h3>
+          <div class="bg-primary rounded-lg p-4">
+            <div class="flex items-center mb-2"><i data-feather="message-square" class="mr-2"></i><span class="font-medium">Atendimento</span></div>
+            <p class="text-sm mb-4">Tire suas dúvidas pelo WhatsApp:</p>
+            <a href="https://wa.me/558831990495" target="_blank" class="bg-white text-dark font-bold py-2 px-4 rounded-lg flex items-center justify-center hover:bg-gray-100 transition"><i data-feather="smartphone" class="mr-2"></i> (88) 3199-0495</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Mercados Públicos de Juazeiro do Norte. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button'),
+      mobileMenu = document.getElementById('mobile-menu'),
+      mobileSubmenuButton = document.getElementById('mobile-submenu-button'),
+      mobileSubmenu = document.getElementById('mobile-submenu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileSubmenuButton.addEventListener('click', () => {
+      mobileSubmenu.classList.toggle('hidden');
+      const icon = mobileSubmenuButton.querySelector('i[data-feather="chevron-down"]');
+      icon.classList.toggle('rotate-180');
+    });
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    feather.replace();
+  </script>
+</body>
+
+</html>

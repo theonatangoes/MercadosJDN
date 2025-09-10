@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgens/Favicon mercado JND.png" type="image/x-icon">
+  <title>Nossos Mercados | Mercados Públicos de Juazeiro do Norte</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1A2E5E', /* Azul Escuro */
+            secondary: '#F9A825', /* Amarelo */
+            accent: '#E53E3E', /* Vermelho */
+            dark: '#0F1A2E', /* Azul muito escuro para o footer */
+            light: '#F5F5F5',
+            blueHover: '#2C4A8D' /* Tom de azul para hover */
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            serif: ['Merriweather', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(26, 46, 94, 0.9) 0%, rgba(44, 74, 141, 0.9) 100%);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .rotate-180 {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-light font-sans">
+
+  <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="imgens/Mercado Juazeiro.png" alt="Mercados Juazeiro do Norte" class="h-15 w-40">
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="p-2 focus:outline-none"><i data-feather="menu"></i></button>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Início</a>
+          <div class="dropdown relative">
+            <a href="sobre.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition flex items-center">Sobre <i data-feather="chevron-down" class="ml-1 w-4 h-4"></i></a>
+            <div class="dropdown-menu absolute hidden bg-white text-dark shadow-lg rounded mt-1 w-48 z-50">
+              <a href="sobre.html" class="block px-4 py-2 hover:bg-gray-100">O Projeto</a>
+            </div>
+          </div>
+          <a href="mercados.html" class="px-4 py-2 font-medium rounded bg-accent text-white transition">Mercados</a>
+          <a href="feirantes.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Feirantes</a>
+          <a href="eventos.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Eventos</a>
+          <a href="contato.html" class="px-4 py-2 font-medium rounded hover:bg-accent hover:text-white transition">Contato</a>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-dark px-4 pb-4">
+      <a href="index.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Início</a>
+      <div class="py-2">
+        <button id="mobile-submenu-button" class="flex items-center justify-between w-full py-2 text-white hover:bg-accent hover:text-white px-2 rounded"><span>Sobre</span><i data-feather="chevron-down" class="w-4 h-4"></i></button>
+        <div id="mobile-submenu" class="pl-4 hidden mt-2">
+          <a href="sobre.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">O Projeto</a>
+          <a href="equipe.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Nossa Equipe</a>
+        </div>
+      </div>
+      <a href="mercados.html" class="block py-2 text-white bg-accent text-white px-2 rounded">Mercados</a>
+      <a href="feirantes.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Feirantes</a>
+      <a href="eventos.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Eventos</a>
+      <a href="contato.html" class="block py-2 text-white hover:bg-accent hover:text-white px-2 rounded">Contato</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero-gradient text-white">
+      <div class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold" data-aos="fade-up">Nossos Mercados</h1>
+        <p class="text-xl mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Espaços de cultura, tradição e comércio que movimentam nossa cidade.</p>
+      </div>
+    </div>
+
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+            <img src="imgens/Mercado-Central-de-Juazeiro.png" alt="Mercado Central" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-bold text-2xl mb-2 text-dark">Mercado Central</h3>
+              <div class="flex items-center text-gray-500 mb-3"><i data-feather="map-pin" class="mr-2 h-5 w-5"></i><span>Centro, Juazeiro do Norte - CE</span></div>
+              <div class="flex items-center text-gray-500 mb-4"><i data-feather="clock" class="mr-2 h-5 w-5"></i><span>Seg-Sáb: 6h-18h | Dom: 6h-12h</span></div>
+              <p class="text-gray-700">O coração da cidade. Aqui você encontra de tudo: frutas, verduras, carnes, artesanato e uma praça de alimentação com comidas típicas.</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://via.placeholder.com/640x360.png/F9A825/FFFFFF?text=Mercado+do+São+Miguel" alt="Mercado do São Miguel" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-bold text-2xl mb-2 text-dark">Mercado do São Miguel</h3>
+              <div class="flex items-center text-gray-500 mb-3"><i data-feather="map-pin" class="mr-2 h-5 w-5"></i><span>R. 15 de Novembro, São Miguel</span></div>
+              <div class="flex items-center text-gray-500 mb-4"><i data-feather="clock" class="mr-2 h-5 w-5"></i><span>Seg-Sáb: 5h-17h | Dom: Fechado</span></div>
+              <p class="text-gray-700">Famoso por seus produtos regionais, ervas medicinais e o autêntico artesanato do Cariri. Um polo de cultura e tradição.</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://via.placeholder.com/640x360.png/E53E3E/FFFFFF?text=Mercado+do+Pirajá" alt="Mercado do Pirajá" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-bold text-2xl mb-2 text-dark">Mercado do Pirajá (Feira das Aves)</h3>
+              <div class="flex items-center text-gray-500 mb-3"><i data-feather="map-pin" class="mr-2 h-5 w-5"></i><span>Bairro Pirajá</span></div>
+              <div class="flex items-center text-gray-500 mb-4"><i data-feather="clock" class="mr-2 h-5 w-5"></i><span>Sáb e Dom: 5h-13h</span></div>
+              <p class="text-gray-700">Especializado na venda de animais, grãos e produtos agrícolas. É o ponto de encontro de produtores de toda a região.</p>
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+            <img src="https://via.placeholder.com/640x360.png/1A2E5E/FFFFFF?text=Mercado+Senhora+Santana" alt="Mercado Senhora Santana" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-bold text-2xl mb-2 text-dark">Mercado Senhora Santana</h3>
+              <div class="flex items-center text-gray-500 mb-3"><i data-feather="map-pin" class="mr-2 h-5 w-5"></i><span>Bairro Franciscanos</span></div>
+              <div class="flex items-center text-gray-500 mb-4"><i data-feather="clock" class="mr-2 h-5 w-5"></i><span>Seg-Sáb: 6h-17h</span></div>
+              <p class="text-gray-700">Um mercado de bairro acolhedor, ideal para as compras do dia a dia, com produtos frescos e atendimento familiar.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <a href="index.html" class="flex items-center">
+              <img src="imgens/Mercado Juazeiro.png" alt="Mercados Juazeiro do Norte" class="h-12 w-auto">
+            </a>
+          </div>
+          <p class="text-gray-400">Fortalecendo o comércio local e valorizando nossa cultura.</p>
+          <div class="flex space-x-4 mt-4"><a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="facebook"></i></a><a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="instagram"></i></a><a href="#" class="text-gray-400 hover:text-white transition"><i data-feather="youtube"></i></a></div>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Links Rápidos</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+            <li><a href="sobre.html" class="text-gray-400 hover:text-white transition">Sobre o Projeto</a></li>
+            <li><a href="mercados.html" class="text-gray-400 hover:text-white transition">Mercados</a></li>
+            <li><a href="feirantes.html" class="text-gray-400 hover:text-white transition">Feirantes</a></li>
+            <li><a href="eventos.html" class="text-gray-400 hover:text-white transition">Eventos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Contato</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center"><i data-feather="mail" class="mr-2"></i><span class="text-gray-400">sedetur@juazeiro.ce.gov.br</span></li>
+            <li class="flex items-center"><i data-feather="phone" class="mr-2"></i><span class="text-gray-400">(88) 3199-0379</span></li>
+            <li class="flex items-center"><i data-feather="map-pin" class="mr-2"></i><span class="text-gray-400">R. 15 de Novembro, S/N</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-4">WhatsApp</h3>
+          <div class="bg-primary rounded-lg p-4">
+            <div class="flex items-center mb-2"><i data-feather="message-square" class="mr-2"></i><span class="font-medium">Atendimento</span></div>
+            <p class="text-sm mb-4">Tire suas dúvidas pelo WhatsApp:</p>
+            <a href="https://wa.me/558831990495" target="_blank" class="bg-white text-dark font-bold py-2 px-4 rounded-lg flex items-center justify-center hover:bg-gray-100 transition"><i data-feather="smartphone" class="mr-2"></i> (88) 3199-0495</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Mercados Públicos de Juazeiro do Norte. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button'),
+      mobileMenu = document.getElementById('mobile-menu'),
+      mobileSubmenuButton = document.getElementById('mobile-submenu-button'),
+      mobileSubmenu = document.getElementById('mobile-submenu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileSubmenuButton.addEventListener('click', () => {
+      mobileSubmenu.classList.toggle('hidden');
+      const icon = mobileSubmenuButton.querySelector('i[data-feather="chevron-down"]');
+      icon.classList.toggle('rotate-180');
+    });
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    feather.replace();
+  </script>
+
+</body>
+
+</html>
